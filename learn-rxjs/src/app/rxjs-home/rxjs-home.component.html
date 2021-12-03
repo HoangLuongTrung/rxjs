@@ -1,16 +1,41 @@
-<div class="t-container bg-gradient-to-r from-green-400 to-blue-500">
-  <div class="content">
-    <div class="px-8">
-      <div class="py-4 text-center">
-        <h1 class="font-bold">Welcome to my Website study RXJS</h1>
-				<span class="text-gray-500">With Angular and TailwinCss</span>
+<div class="px-8">
+  <div class="py-4 text-center">
+    <h1 class="font-bold">Welcome to my website study RXJS</h1>
+    <span class="text-gray-500">With Angular and TailwinCss</span>
+  </div>
+  <div class="text-center">
+    <span class="text-2xl">Reactive Programming</span>
+  </div>
+  <div class="flex flex-wrap">
+    <ng-container *ngFor="let item of listItems">
+      <div class="p-2 w-1/3">
+        <div class="
+                rounded-md
+                border-2
+                text-center
+                w-full
+                flex flex-column
+                p-4
+                hover:bg-gray-100
+              ">
+          <span class="mb-4 text-lg">{{ item.name }}</span>
+          <button type="button" class="
+                  h-10
+                  w-16
+                  block
+                  ml-auto
+                  rounded-lg
+                  text-white
+                  rasu
+                  bg-gradient-to-r
+                  from-green-400
+                  to-blue-500
+                  hover:from-pink-500 hover:to-yellow-500
+                " (click)="onNavigate(item.link)">
+            Views
+          </button>
+        </div>
       </div>
-      <div>
-				<span>List </span>
-				<button type="button" class="h-12 px-4 rounded-lg text-white rasu bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
-					Subject
-				</button>
-			</div>
-    </div>
+    </ng-container>
   </div>
 </div>
