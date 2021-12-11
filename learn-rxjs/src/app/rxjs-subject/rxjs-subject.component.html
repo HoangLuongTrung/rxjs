@@ -1,1 +1,25 @@
-<p>rxjs-subject works!</p>
+<div>
+  <div class="py-4 text-center">
+    <h1 class="font-bold text-2xl">Subject</h1>
+  </div>
+
+  <div>
+    <!-- Subject -->
+    <div class="mb-4">
+      <app-item-unit [nameItem]="'Subject:'" [nameImage]="'subject'" (onClick)="onSubject()"></app-item-unit>
+    </div>
+    <!-- BehaviorSubject -->
+    <div class="mb-4">
+      <app-item-unit [nameItem]="'BehaviorSubject:'" [nameImage]="'behavior-subject'" (onClick)="onBehaviorSubject()"></app-item-unit>
+    </div>
+    <!-- ReplaySubject -->
+    <div class="mb-4">
+      <app-item-unit [nameItem]="'ReplaySubject:'" [nameImage]="'replay-subject'" (onClick)="onReplaySubject()"></app-item-unit>
+    </div>
+    <!-- AsyncSubject -->
+    <div class="mb-4">
+      <app-item-unit [nameItem]="'AsyncSubject:'" [nameImage]="'async-subject'" (onClick)="onAsyncSubject()"></app-item-unit>
+    </div>
+
+  </div>
+</div>

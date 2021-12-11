@@ -39,6 +39,10 @@ export class RxjsHomeComponent implements OnInit {
       {
         name: 'Observables into Array',
         link: '#'
+      },
+      {
+        name: 'Operators',
+        link: '#'
       }
     ]
   }
